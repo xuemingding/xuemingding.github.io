@@ -349,10 +349,6 @@ h3 {
   background: var(--paper);
 }
 
-.section-resume {
-  background: #e9efe9;
-}
-
 .section-inner,
 .contact-inner {
   width: min(1120px, calc(100% - 36px));
@@ -613,46 +609,6 @@ h3 {
   line-height: 1.35;
 }
 
-.resume-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
-  gap: clamp(26px, 5vw, 64px);
-  align-items: center;
-  padding: clamp(26px, 4vw, 44px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: var(--shadow);
-}
-
-.resume-panel p {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 18px;
-}
-
-.resume-download {
-  display: grid;
-  gap: 8px;
-  min-height: 178px;
-  align-content: center;
-  padding: 28px;
-  border-radius: 8px;
-  color: #fff;
-  background: var(--red);
-}
-
-.resume-download span,
-.resume-download small {
-  color: rgba(255, 255, 255, 0.78);
-  font-weight: 800;
-}
-
-.resume-download strong {
-  font-size: clamp(24px, 4vw, 34px);
-  line-height: 1.25;
-}
-
 .contact-section {
   padding: clamp(76px, 8vw, 110px) 0;
   color: #fff;
@@ -737,8 +693,7 @@ h3 {
 
   .split-layout,
   .split-layout.reverse,
-  .contact-inner,
-  .resume-panel {
+  .contact-inner {
     grid-template-columns: 1fr;
   }
 
