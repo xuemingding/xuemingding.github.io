@@ -25,6 +25,7 @@
         <a href="#solutions">技术方案</a>
         <a href="#projects">项目经验</a>
         <a href="#service">合作服务</a>
+        <a href="#resume">简历下载</a>
         <a class="nav-contact" href="#contact">技术交流</a>
       </nav>
     </header>
@@ -41,6 +42,7 @@
           </p>
           <div class="hero-actions" aria-label="主要联系方式">
             <a href="mailto:xuemingding@163.com">邮件联系</a>
+            <a href="ding-xueming-resume-202605.pdf" download>下载简历</a>
             <a href="tel:13818035653">电话交流</a>
           </div>
         </div>
@@ -124,8 +126,8 @@
             </ul>
           </div>
           <figure class="feature-figure">
-            <img src="image9.png" alt="高性能电机控制评估板">
-            <figcaption>高性能驱动控制板与电流采样硬件平台</figcaption>
+            <img src="image6.jpeg" alt="电机控制板调试平台">
+            <figcaption>伺服驱动器控制板调试与电流采样测试平台</figcaption>
           </figure>
         </div>
       </section>
@@ -133,29 +135,28 @@
       <section class="section section-dark">
         <div class="section-inner">
           <div class="section-heading compact">
-            <p class="eyebrow">Representative Platforms</p>
-            <h2>典型工程平台</h2>
+            <p class="eyebrow">Joint Drive Platforms</p>
+            <h2>机器人关节驱动器方案</h2>
           </div>
           <div class="platform-grid">
             <article class="platform-item">
-              <img src="image4.png" alt="机器人关节电机模组">
+              <div class="platform-image-pair">
+                <img src="image4.png" alt="机器人关节电机模组">
+                <img src="image5.jpeg" alt="STM32关节驱动器控制板实物">
+              </div>
               <div>
-                <h3>机器人关节驱动器</h3>
-                <p>三环控制策略，双编码器，高精度电流采样，支持CANopen、CAN、485总线。</p>
+                <h3>机器人关节驱动器：STM32方案</h3>
+                <p>三环控制策略，双编码器，高精度电流采样；电流环PI自动整定，速度环ADRC或PI加前馈，位置环P加前馈，支持CANopen、CAN、485总线。</p>
               </div>
             </article>
             <article class="platform-item">
-              <img src="image5.jpeg" alt="关节驱动器控制板实物">
-              <div>
-                <h3>STM32关节驱动方案</h3>
-                <p>电流环PI自动整定，速度环ADRC或PI加前馈，位置环P加前馈。</p>
+              <div class="platform-image-pair">
+                <img src="image7.png" alt="关节电机模组产品图">
+                <img src="image9.png" alt="高性能驱动控制板与电流采样硬件平台">
               </div>
-            </article>
-            <article class="platform-item">
-              <img src="image7.png" alt="关节电机模组产品图">
               <div>
-                <h3>高带宽高精度方案</h3>
-                <p>480MHz RISC-V内核，HCL硬件电流环，支持FOC硬件加速与多轴实时控制扩展。</p>
+                <h3>机器人关节驱动器：高性能方案（高带宽、高精度、高可靠性）</h3>
+                <p>面向高带宽、高精度、高可靠性：480MHz RISC-V内核，HCL硬件电流环，支持FOC全流程硬件加速；电机端编码器、BiSS离轴绝对值编码器、SDFM高精度电流采样，并可扩展EtherCAT多轴实时控制。</p>
               </div>
             </article>
           </div>
@@ -257,6 +258,23 @@
         </div>
       </section>
 
+      <section class="section section-resume" id="resume">
+        <div class="section-inner resume-panel">
+          <div>
+            <p class="eyebrow">Resume Download</p>
+            <h2>下载完整个人简历</h2>
+            <p>
+              PDF简历包含个人概述、技术工程能力、永磁同步电机控制参数一键整定、伺服驱动器、机器人关节驱动器STM32方案、高性能方案、步进伺服、无感FOC、气动比例阀/定位器控制器、项目清单与合作方式。
+            </p>
+          </div>
+          <a class="resume-download" href="ding-xueming-resume-202605.pdf" download>
+            <span>PDF 简历</span>
+            <strong>丁学明简历202605</strong>
+            <small>点击下载</small>
+          </a>
+        </div>
+      </section>
+
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-inner">
           <div>
@@ -274,6 +292,10 @@
             <a href="mailto:xuemingding@163.com">
               <span>邮箱</span>
               <strong>xuemingding@163.com</strong>
+            </a>
+            <a href="ding-xueming-resume-202605.pdf" download>
+              <span>个人简历</span>
+              <strong>下载PDF版本</strong>
             </a>
             <p>
               上海理工大学<br>

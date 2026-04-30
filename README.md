@@ -3,3 +3,5 @@
 这是丁学明的中文个人工程网站，展示电机控制、伺服驱动、机器人关节驱动器、无感FOC、控制算法工程落地、技术服务与合作方式。
 
 线上地址：https://xuemingding.github.io/
+
+网站提供 PDF 简历下载：`ding-xueming-resume-202605.pdf`
