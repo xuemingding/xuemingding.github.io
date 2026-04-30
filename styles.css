@@ -320,36 +320,6 @@ h3 {
   font-size: 15px;
 }
 
-.team-intro {
-  padding: clamp(64px, 7vw, 96px) 0 0;
-  background: var(--paper);
-}
-
-.team-panel {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.45fr) minmax(0, 1fr);
-  gap: clamp(28px, 5vw, 64px);
-  align-items: end;
-  padding: clamp(28px, 4vw, 44px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 18px 45px rgba(23, 33, 43, 0.08);
-}
-
-.team-panel h2 {
-  margin-bottom: 0;
-  font-size: clamp(30px, 3.5vw, 46px);
-}
-
-.team-panel p:last-child {
-  margin-bottom: 0;
-  color: var(--ink);
-  font-size: clamp(20px, 2.2vw, 28px);
-  font-weight: 800;
-  line-height: 1.65;
-}
-
 .section {
   padding: clamp(76px, 9vw, 130px) 0;
 }
@@ -768,8 +738,7 @@ h3 {
   .split-layout,
   .split-layout.reverse,
   .contact-inner,
-  .resume-panel,
-  .team-panel {
+  .resume-panel {
     grid-template-columns: 1fr;
   }
 
@@ -872,10 +841,6 @@ h3 {
   .section-inner,
   .contact-inner {
     width: min(100% - 32px, 1120px);
-  }
-
-  .team-intro {
-    padding-top: 40px;
   }
 
   .capability-card,
