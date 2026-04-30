@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="丁学明个人工程网站，专注电机底层驱动、永磁同步电机控制、伺服驱动器、机器人关节驱动器、无感FOC与控制算法工程落地。"
+    >
+    <title>丁学明 | 电机控制与伺服驱动工程</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="返回首页">
+        <img src="university-logo.jpeg" alt="上海理工大学标识">
+        <span>丁学明</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="打开导航" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#focus">工程能力</a>
+        <a href="#solutions">技术方案</a>
+        <a href="#projects">项目经验</a>
+        <a href="#service">合作服务</a>
+        <a class="nav-contact" href="#contact">技术交流</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <img class="hero-media" src="image3.png" alt="自研机器人关节驱动器实验平台">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">上海理工大学 · 光电信息与计算机工程学院 · 控制科学与工程系</p>
+          <h1 id="hero-title">丁学明</h1>
+          <p class="hero-lede">
+            专注电机底层驱动、伺服控制算法与机器人关节驱动器工程落地，支持从算法设计、嵌入式实现、系统调试到产品化交付的完整链路。
+          </p>
+          <div class="hero-actions" aria-label="主要联系方式">
+            <a href="mailto:xuemingding@163.com">邮件联系</a>
+            <a href="tel:13818035653">电话交流</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-stats" aria-label="工程经验概览">
+        <div class="stat-item">
+          <strong>20+</strong>
+          <span>项目产品级开发与调试经验</span>
+        </div>
+        <div class="stat-item">
+          <strong>10余年</strong>
+          <span>伺服控制与PID工程整定积累</span>
+        </div>
+        <div class="stat-item">
+          <strong>多平台</strong>
+          <span>STM32、GD32、SPC、RISC-V 控制芯片</span>
+        </div>
+        <div class="stat-item">
+          <strong>完整链路</strong>
+          <span>算法、底层驱动、测试、培训与源码交付</span>
+        </div>
+      </section>
+
+      <section class="section section-light" id="focus">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Engineering Focus</p>
+            <h2>面向产品落地的电机控制工程能力</h2>
+            <p>
+              能力重点覆盖永磁同步电机、步进伺服、无位置传感器FOC、机器人关节驱动器与气动比例阀/定位器控制器等方向。
+            </p>
+          </div>
+
+          <div class="capability-grid">
+            <article class="capability-card">
+              <span class="card-index">01</span>
+              <h3>底层驱动与FOC实现</h3>
+              <p>
+                熟悉编码器读取、电流采样、Clarke/Park变换、逆Park变换、SVPWM、死区补偿与交叉解耦等电机控制基础链路。
+              </p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">02</span>
+              <h3>控制算法与系统优化</h3>
+              <p>
+                形成成熟的前馈PID设计与整定方法，ADRC已应用于伺服驱动器，通过ESO扰动估计与补偿提升抗扰性能。
+              </p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">03</span>
+              <h3>无感FOC与观测器</h3>
+              <p>
+                覆盖滑模观测器、Luenberger观测器、磁链观测器与高频注入等角度估计方法，支持编码器与无位置传感器方案。
+              </p>
+            </article>
+            <article class="capability-card">
+              <span class="card-index">04</span>
+              <h3>测试调试与现场支持</h3>
+              <p>
+                使用Ozone实时绘制曲线、导出数据并结合Matlab分析，支持带宽、动态响应、静态刚度、效率与稳定性测试。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-split" id="solutions">
+        <div class="section-inner split-layout">
+          <div class="split-copy">
+            <p class="eyebrow">Servo Solutions</p>
+            <h2>永磁同步电机控制参数一键整定</h2>
+            <p>
+              通过电机辨识模态产生数据，识别电阻、电感、磁链、转动惯量与摩擦系数，再基于带宽法完成电流环、速度环和前馈参数整定。
+            </p>
+            <ul class="check-list">
+              <li>电流环：基于电学参数与带宽法整定PI参数，实现零极点对消。</li>
+              <li>速度环：结合动力学参数、带宽法与前馈控制优化动态响应。</li>
+              <li>带宽优化：基于速度阶跃响应搜索速度环最优带宽。</li>
+              <li>工程价值：快速获取控制参数，提升系统适应性和研发效率。</li>
+            </ul>
+          </div>
+          <figure class="feature-figure">
+            <img src="image9.png" alt="高性能电机控制评估板">
+            <figcaption>高性能驱动控制板与电流采样硬件平台</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <p class="eyebrow">Representative Platforms</p>
+            <h2>典型工程平台</h2>
+          </div>
+          <div class="platform-grid">
+            <article class="platform-item">
+              <img src="image4.png" alt="机器人关节电机模组">
+              <div>
+                <h3>机器人关节驱动器</h3>
+                <p>三环控制策略，双编码器，高精度电流采样，支持CANopen、CAN、485总线。</p>
+              </div>
+            </article>
+            <article class="platform-item">
+              <img src="image5.jpeg" alt="关节驱动器控制板实物">
+              <div>
+                <h3>STM32关节驱动方案</h3>
+                <p>电流环PI自动整定，速度环ADRC或PI加前馈，位置环P加前馈。</p>
+              </div>
+            </article>
+            <article class="platform-item">
+              <img src="image7.png" alt="关节电机模组产品图">
+              <div>
+                <h3>高带宽高精度方案</h3>
+                <p>480MHz RISC-V内核，HCL硬件电流环，支持FOC硬件加速与多轴实时控制扩展。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="projects">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Project Experience</p>
+            <h2>项目经验覆盖工业伺服、机器人关节与无感控制</h2>
+          </div>
+
+          <div class="project-columns">
+            <article class="project-block">
+              <h3>伺服控制器</h3>
+              <ul>
+                <li>步进电机高性能驱动控制算法与FOC伺服驱动器开发</li>
+                <li>AGV伺服驱动器、自抗扰控制算法与轮式机器人驱动轮控制</li>
+                <li>高性能工业伺服驱动器、直线电机伺服控制算法</li>
+                <li>磨边机、横机、二维转台、驱控一体伺服电缸控制器</li>
+              </ul>
+            </article>
+
+            <article class="project-block">
+              <h3>机器人关节驱动器</h3>
+              <ul>
+                <li>机器人关节驱动器自适应控制算法与关键算法开发</li>
+                <li>机械臂伺服、轮式机器人关节控制器底层驱动和算法</li>
+                <li>行星-谐波关节模组、人形机器人、机器狗关节模组驱动器</li>
+                <li>AI机器人电机控制器、矿山机器人与智慧机器人关节模组</li>
+              </ul>
+            </article>
+
+            <article class="project-block">
+              <h3>无感与霍尔控制器</h3>
+              <ul>
+                <li>C2000无感FOC及PID参数自适应算法</li>
+                <li>油泵电机无感带载启动与参数识别</li>
+                <li>越野车、电动滑板车、压缩机、风机、水泵等无感FOC控制</li>
+                <li>电动自行车霍尔控制器与跑步机无刷马达控制器</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-process">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <p class="eyebrow">Control Architecture</p>
+            <h2>从辨识到交付的工程路径</h2>
+          </div>
+          <ol class="process-list">
+            <li>
+              <span>01</span>
+              <h3>模型辨识</h3>
+              <p>识别电学参数与动力学参数，建立可用于整定和前馈设计的电机模型。</p>
+            </li>
+            <li>
+              <span>02</span>
+              <h3>控制器设计</h3>
+              <p>完成电流环、速度环、位置环控制策略，并针对扰动、超调和响应速度优化。</p>
+            </li>
+            <li>
+              <span>03</span>
+              <h3>嵌入式实现</h3>
+              <p>落地到底层驱动、FOC流程、采样与编码器反馈，适配目标控制平台。</p>
+            </li>
+            <li>
+              <span>04</span>
+              <h3>测试迭代</h3>
+              <p>通过带宽、阶跃响应、稳定性、效率和现场数据分析完成系统优化。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-service" id="service">
+        <div class="section-inner split-layout reverse">
+          <figure class="feature-figure">
+            <img src="image6.jpeg" alt="电机控制板调试平台">
+            <figcaption>控制算法、硬件平台与实验室联合调试支持</figcaption>
+          </figure>
+          <div class="split-copy">
+            <p class="eyebrow">Service & Cooperation</p>
+            <h2>技术开发、平台支持与工程师培训</h2>
+            <ul class="check-list">
+              <li>电机底层程序和控制算法开发，支持源码交付。</li>
+              <li>电机硬件、测试流程与系统方案支持。</li>
+              <li>电机控制核心算法培训，帮助工程师提升实战能力。</li>
+              <li>工程师可进实验室联合开发，并提供必要调试支持。</li>
+              <li>基于自研关节驱动器的平台化支持，包含硬件、算法、软件等技术资料。</li>
+            </ul>
+            <p class="partner-note">
+              已服务上海、深圳、杭州、苏州、合肥、成都、珠海、厦门等地科技型公司，其中包含上市公司、中型公司与长期合作伙伴。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">欢迎技术交流与合作</h2>
+            <p>
+              适合电机控制算法开发、机器人关节驱动器方案、伺服系统调试、无感FOC控制、工程师培训与校企合作咨询。
+            </p>
+          </div>
+          <div class="contact-panel">
+            <a href="tel:13818035653">
+              <span>手机/微信</span>
+              <strong>13818035653</strong>
+            </a>
+            <a href="mailto:xuemingding@163.com">
+              <span>邮箱</span>
+              <strong>xuemingding@163.com</strong>
+            </a>
+            <p>
+              上海理工大学<br>
+              光电信息与计算机工程学院 · 控制科学与工程系
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 丁学明</span>
+      <span>电机控制 · 伺服驱动 · 机器人关节驱动器</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
