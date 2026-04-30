@@ -237,8 +237,8 @@ h1 {
 
 h2 {
   margin-bottom: 18px;
-  font-size: clamp(30px, 4.6vw, 54px);
-  line-height: 1.16;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.18;
   letter-spacing: 0;
 }
 
@@ -356,7 +356,7 @@ h3 {
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: 920px;
   margin-bottom: 42px;
 }
 
@@ -367,6 +367,12 @@ h3 {
 
 .section-heading.compact {
   max-width: 720px;
+}
+
+@media (min-width: 900px) {
+  .section-heading.fit-line h2 {
+    white-space: nowrap;
+  }
 }
 
 .capability-grid {
